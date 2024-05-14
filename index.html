@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Poetsen+One&display=swap" rel="stylesheet">
+<style>
+  body{
+    background-color: #333;
+  }
+.pricing-container{
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: .6rem;
+flex-wrap: nowrap;
+}
+.pricing-plan{
+min-width: 280px;
+background-color: #f2f2f2;
+/* padding: 15px 10px; */
+margin: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 12px;
+}
+.plan-title{
+  font-family: "Bevan", serif;
+  font-weight: 400; 
+}
+.plan-price{
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+}
+.grad{
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+  text-align: center;
+  background:linear-gradient(120deg,#efa250,#725fdd);
+}
+.plan-button{
+  font-family: "Bevan";
+  font-size: 10px;
+  margin-bottom: 5px;
+  padding: 2px 15px;
+  border: none;
+  background-color: #fa8100;
+  color: #fff;
+  border-radius: 12px;
+
+}
+
+@media(max-width:1250px){
+.pricing-container{
+  flex-direction: column;
+  height: 100%;
+}
+
+}
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="grad">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$11.99/month</div></div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="grad"><div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div></div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+      </div>
+      <div class="pricing-plan">
+      <div class="grad">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div></div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
